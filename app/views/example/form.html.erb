@@ -1,4 +1,4 @@
-<form_tag do>
+<%=form_tag("/job_applications") do%>
 
 <%= label_tag = "Full name"%>
 <%= text_field_tag "Full name" %>
@@ -10,15 +10,15 @@
 <%= text_field_tag "Hobby"%>
 <br>
 <%= label_tag = "Years Experience"%>
-<%= text_field_tag "Years Eperience"%>
+<%= text_field_tag "Years Experience"%>
 <br>
 <%= label_tag = "Date Available"%>
 <%= date_field_tag "Date Available"%>
 <br>
-<%= submit_tag "Submit" %>
+<%= submit_tag("Submit")%>
 
+<%end%>
 
-</form>
 
 
 
