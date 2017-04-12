@@ -1,1 +1,6 @@
-events#index page
+<h1>All events</h1>
+<%= link_to 'New event', new_event_path(@event) %>
+
+<% @events.each do |event| %>
+<h3><%= render "single_event", current_event: event%> </h3>
+<% end %>

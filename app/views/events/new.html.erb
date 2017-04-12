@@ -1,1 +1,14 @@
-events#new page
+<h1>New Event</h1>
+
+<%= form_for @event do |f| %>
+
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :date  %>
+  <%= f.date_select :date %>
+</p>
+<%end %>
